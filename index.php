@@ -7,7 +7,7 @@
   $replace = "***";
   $count = 0;
 
-  str_replace ( mixed $search , mixed $replace , mixed $lorem [, int &$count ] ) : mixed;
+  $goodLorem = str_replace ( $search , $replace , $lorem );
 
  ?>
 
@@ -16,10 +16,6 @@
  <h1>Il testo è:
    <?php
    echo "<br>";
-   echo $lorem;
+   echo $goodLorem;
    ?>
  </h1>
-
-
-
-  <h1>Per un totale di "<?php  echo $count;  ?>" badwords.</h1>
